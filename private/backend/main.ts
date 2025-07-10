@@ -20,8 +20,8 @@ app.use( '/scripts', express.static(scripts) )
 app.get('/', (req, res) => res.sendFile( path.join( pages, 'index.html') ))
 
 
-const port = 5050
-const host = '100.116.244.93'
+const port = Number(process.env.PORT!)
+const host = process.env.HOST!
 
 app.listen(port, host, () => {
     console.log(`http://${host}:${port}`)

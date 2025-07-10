@@ -1,0 +1,24 @@
+{
+  "name": "lanservertest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "copyPages": "xcopy /E /I /Y private\\frontend\\pages dist\\frontend\\pages",
+    "start": " node dist/backend/main.js",
+    "dev": "tsc && npm run copyPages && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+
+  "description": "",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "cpx": "^1.5.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "typescript": "^5.8.3"
+  }
+}

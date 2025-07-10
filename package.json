@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "copyPages": "xcopy /E /I /Y private\\frontend\\pages dist\\frontend\\pages",
-    "dev": "tsc && npm run copyPages && node dist/backend/main.js"
+    "start": " node dist/backend/main.js",
+    "dev": "tsc && npm run copyPages && npm run start"
   },
   "keywords": [],
   "author": "",

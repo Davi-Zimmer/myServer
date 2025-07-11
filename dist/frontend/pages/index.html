@@ -14,11 +14,123 @@
             body {
                 width: 100vw;
                 height: 100vh;
+                background-color: #323232;
+            }
+
+            .flexCollunm {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container {
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .loginContainer {
+                margin: auto;
+                width: 30vw;
                 background-color: black;
             }
+
+            .options {
+                display: flex;
+            }
+
+        
+
+            .button{ 
+                background-color: black;
+                width: 50%;
+                padding: 10px;
+                border: none;
+                font-size: 20px;
+            }
+
+            .buttonSelected {
+                background-color: #222;
+            }
+
+            .loginItens {
+                justify-content: space-between;
+                height: 60vh;
+                box-sizing: border-box;
+                
+            }
+
+            .loginInputs {
+                padding: 20px;
+                gap: 20px;
+
+            }
+
+            .loginInputs input {
+                outline: none;
+                padding: 10px;
+            }
+
+            .btn {
+                padding: 10px;
+                width: 90%;
+                background-color: #323232;
+            }
+
+            .btnContainer {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .loginItems{
+                display: none;
+
+            }
+
+            .singUpItems {
+
+            }
+
+            
         </style>
     </head>
     <body>
-        <h1>Hello, World!</h1>
+        <div class="container">
+
+            <div class="loginContainer">
+                <div class="options">
+                    <button id="gotoLogin" class="button buttonSelected">Login</button>
+                    <button id="gotoSingUp" class="button">Sing up</button>
+                </div>
+
+                <div id="loginTemp" class="loginItems flexCollunm">
+
+                    <div class="loginInputs flexCollunm">
+                        <input type="text" class="emailInput" placeholder="Username">
+                        <input type="password" class="passwordInput" placeholder="Password">
+                    </div>
+
+                    <div class="btnContainer">
+                        <button id="gotoLogin" class="btn">Login</button>
+                    </div>
+
+                </div>
+
+                <div class="singUpItems flexCollunm">
+
+                    <div class="loginInputs flexCollunm">
+                        <input type="text" class="emailInput" placeholder="Username">
+                        <input type="password" class="passwordInput" placeholder="Password">
+                    </div>
+
+
+                </div>
+            
+            </div>
+
+        </div>
     </body>
+
+    <script src="../scripts/login.js"></script>
+
 </html>
